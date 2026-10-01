@@ -22,7 +22,7 @@ STREAMS = [str(s) for s in range(101, 121)]
 LIQUID = {"105", "110", "115", "120"}
 
 # Layout in pixels. If OCR misreads the clean sheet, tune these -- never the parser.
-FONT_SIZE = 22
+FONT_SIZE = 26
 WIDTH, HEIGHT = 2520, 1120
 LABEL_X = 40
 FIRST_COLUMN_X, COLUMN_STEP = 720, 180
