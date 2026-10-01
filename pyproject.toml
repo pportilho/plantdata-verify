@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hmb-extract"
+version = "0.1.0"
+description = "Extract heat & material balance tables from scanned engineering PDFs and verify every stream with physics."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "Paulo Portilho"}]
+dependencies = ["pyyaml>=6"]
+
+[project.optional-dependencies]
+ocr = ["pytesseract>=0.3.10", "pillow>=10.1"]
+dev = ["pytest>=8", "pillow>=10.1"]
+
+[project.scripts]
+hmb-extract = "hmb_extract.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["ocr: needs a local OCR engine (Apple Vision helper or Tesseract)"]
