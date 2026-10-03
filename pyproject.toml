@@ -10,7 +10,12 @@ readme = "README.md"
 requires-python = ">=3.11"
 license = {text = "MIT"}
 authors = [{name = "Paulo Portilho"}]
+keywords = ["engineering", "ocr", "pdf", "process-engineering", "data-validation", "heat-material-balance"]
 dependencies = ["pyyaml>=6"]
+
+[project.urls]
+Repository = "https://github.com/pportilho/hmb-extract"
+Issues = "https://github.com/pportilho/hmb-extract/issues"
 
 [project.optional-dependencies]
 ocr = ["pytesseract>=0.3.10", "pillow>=10.1"]
