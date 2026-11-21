@@ -1,10 +1,12 @@
-# hmb-extract
+# plantdata-verify
+
+> First module: **hmb-extract** — heat & material balance sheets. The CLI and the Python package keep the `hmb-extract` / `hmb_extract` name.
 
 **Engineering-verified extraction for heat & material balance sheets.**
 
 Extract process tables from scanned engineering PDFs, preserve the provenance of every value, then verify each stream with domain rules and physics — not with a hand-typed answer key.
 
-[![ci](https://github.com/pportilho/hmb-extract/actions/workflows/ci.yml/badge.svg)](https://github.com/pportilho/hmb-extract/actions/workflows/ci.yml)
+[![ci](https://github.com/pportilho/plantdata-verify/actions/workflows/ci.yml/badge.svg)](https://github.com/pportilho/plantdata-verify/actions/workflows/ci.yml)
 [![Python](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
@@ -88,7 +90,7 @@ See [docs/VALIDATION.md](docs/VALIDATION.md) for what this proves — and what i
 ## 60-second demo — no OCR required
 
 ```bash
-git clone https://github.com/pportilho/hmb-extract && cd hmb-extract
+git clone https://github.com/pportilho/plantdata-verify && cd plantdata-verify
 python -m venv .venv && . .venv/bin/activate
 pip install -e .
 hmb-extract run examples/faulty.tokens.json --schema examples/schema.yaml

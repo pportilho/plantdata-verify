@@ -14,8 +14,8 @@ keywords = ["engineering", "ocr", "pdf", "process-engineering", "data-validation
 dependencies = ["pyyaml>=6"]
 
 [project.urls]
-Repository = "https://github.com/pportilho/hmb-extract"
-Issues = "https://github.com/pportilho/hmb-extract/issues"
+Repository = "https://github.com/pportilho/plantdata-verify"
+Issues = "https://github.com/pportilho/plantdata-verify/issues"
 
 [project.optional-dependencies]
 ocr = ["pytesseract>=0.3.10", "pillow>=10.1"]
